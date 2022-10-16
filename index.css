@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500;600&family=Clicker+Script&family=Edu+NSW+ACT+Foundation:wght@500&family=Kaushan+Script&family=Mali:wght@300;400&family=Merriweather:ital,wght@1,300&family=Patua+One&family=Play:wght@700&family=Righteous&family=Rubik+Moonrocks&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500;600&family=Clicker+Script&family=Edu+NSW+ACT+Foundation:wght@500&family=Kaushan+Script&family=Mali:wght@300;400&family=Merriweather:ital,wght@1,300&family=Patua+One&family=Play:wght@700&family=Righteous&family=Rubik+Moonrocks&family=Satisfy&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background-color: rgb(240, 243, 207);
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heading{
+    width: 100vw;
+    height: 5.5 rem;
+    background-color: rgb(234, 234, 12);
+    color:  rgb(54, 52, 52);
+    box-shadow: 0px 10px 16px rgb(73, 72, 72);
+}
+
+.heading h1{
+    line-height: 5.8rem;
+    margin-left: 2rem;
+    font-weight: 500;
+    font-family: 'Patua One', cursive;
+
+}
+
+.add:active{
+    transform: scale(0.98);
+
+}
+
+.btn-div{
+    position: absolute;
+    top: 7rem;
+    right: 1rem;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: 'Play', sans-serif;
+    
+}
+button.learn-more{
+    width: 12rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 1.6rem;
+}
+
+button.learn-more .circle{
+    transition: all 0.45s cubic-bezier(.65,0,.076,1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: yellow;
+    border-radius: 1.6rem;
+    
+}
+button.learn-more .circle #cc{
+    /* background: #2ecc71; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0.7rem;
+    left: 1rem;
+
+}
+/* button.learn-more .circle .icon{
+    transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background:#ffff;
+}
+
+button.learn-more .circle .icon .arrow{
+    transition: all 0.45s cubic-bezier(.65,0,.076,1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+button.learn-more .circle .icon .arrow::before{
+    position: absolute;
+    content: "";
+    top: -.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 00.125rem solid #ffff;
+    border-right: 00.125rem solid #ffff;
+    transform: rotate(45deg);
+    
+} */
+
+button.learn-more .button-text{
+    transition: all 0.45s cubic-bezier(.65,0,.076,1);
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+button:hover .circle{
+    width: 100%;
+    /* border: 2px solid black; */
+
+}
+
+/* button:hover .circle .icon.arrow{
+    background: #ffff;
+    transform: translate(1rem,0);
+} */
+
+button:hover .button-text{
+    color: rgb(23, 22, 22);
+}
+.note{
+    background-color: #ffff;
+    margin: 30px 20px;
+    height: 200px;
+    width: 400px;
+    overflow-y: scroll;
+    margin-top: 7rem;
+    box-shadow: inset 1px 1px 0 rgb(54, 52, 52),
+        inset 0 -1px 0 rgba(54, 52, 52);
+        box-shadow: 0px 10px 16px rgb(122, 115, 12);
+}
+
+.note .tools{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+
+}
+
+.note .tools .button{
+    background-color: transparent;
+    border: none;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.note textarea{
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: none;
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.fa-edit,
+.fa-trash-alt{
+    color: #ffff;
+    padding: 10px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+}
+.fa-trash-alt{
+    background-color: red;
+}
+
+.fa-edit:hover{
+    background-color: #ffff;
+    color: #2ecc71;
+    filter: drop-shadow(0px 10px 8px rgb(219,218,218));
+}
+
+.fa-trash-alt:hover{
+    background-color: #ffff;
+    color: red;
+    filter: drop-shadow(0px 10px 8px rgb(219,218,218));
+}
+.main{
+    padding: 20px;
+}
+.hidden{
+    display: none;
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+    background-color: rgb(58, 55, 55);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+    background-color: rgb(215, 164, 25);
+    border: 3px solid transparent;
+    background-clip: content-box;
+
+}
